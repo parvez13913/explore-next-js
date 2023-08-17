@@ -1,4 +1,6 @@
 import React from 'react';
+import DashBordLayout from '../../components/Layouts/DashbordLayout';
+import RootLayouts from '../../components/Layouts/RootLayouts';
 
 const AdminPage = () => {
     return (
@@ -9,3 +11,14 @@ const AdminPage = () => {
 };
 
 export default AdminPage;
+
+
+AdminPage.getLayout = function getLayout(page) {
+    return (
+        <RootLayouts>
+            <DashBordLayout>
+                {page}
+            </DashBordLayout>
+        </RootLayouts>
+    )
+}
