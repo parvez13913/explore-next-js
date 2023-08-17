@@ -1,12 +1,13 @@
 import { Button } from "antd";
+import Link from "next/link";
 
 const NewsHomePage = () => {
     return (
         <div>
-            <h1>This is News Home page</h1>
             <Button type="primary">
-                Primary
+                <Link href="/">Home</Link>
             </Button>
+            <h1>This is News Home page</h1>
         </div>
     );
 };
